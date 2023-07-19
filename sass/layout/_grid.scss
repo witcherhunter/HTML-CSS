@@ -1,0 +1,83 @@
+.row {
+    max-width: $grid-width;
+    display: flex;
+    margin: -15rem auto;
+    margin-left: 165px;
+    margin-right: 40px;
+
+    
+  
+    &:not(:last-child) {
+        margin-bottom: $gutter-horizontal;
+    }
+    
+
+    @include clear-fix;
+
+    [class^=col-] {
+        float: left;
+    }
+
+    &:not(:last-child) {
+        margin-left: $gutter-horizontal;
+        
+    }
+
+    .col-1-of-2 {
+        width: calc((100% - #{$gutter-horizontal}) / 2);
+        position: relative;
+        left: -2rem;
+        
+    }
+
+        .col-1-of-3 {
+        width: calc(100% - 2 * #{$gutter-horizontal} /3);
+        position: relative;
+        
+    
+        
+    }
+   
+}
+
+.row-1 {
+    max-width: $grid-width;
+    display: block;
+    margin: 0 auto;
+    margin-right: 40px;
+    
+  
+    &:not(:last-child) {
+        margin-bottom: $gutter-horizontal;
+    }
+    
+
+    @include clear-fix;
+
+    [class^=col-] {
+        float: left;
+    }
+
+    &:not(:last-child) {
+        margin-left: $gutter-horizontal;
+        
+    }
+
+    .col-1-of-2 {
+        width: calc((100% - #{$gutter-horizontal}) / 2);
+        position: relative;
+        left: -2rem;
+        
+    }
+
+        .col-1-of-3 {
+        width: calc(100% - 2 * #{$gutter-horizontal} /3);
+        position: relative;
+        
+    
+        
+    }
+   
+}
+
+

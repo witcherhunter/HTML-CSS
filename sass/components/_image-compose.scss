@@ -1,0 +1,44 @@
+.image-class-photo{
+    width: 55%;
+    box-shadow: 0 2rem 4rem rgba($black,.3);
+    
+    border-radius: 2px;
+    margin-left: 10rem;
+    transition:all .2;
+    border: 5px solid;
+    // border-image: $amir;
+    // border-image-slice: 1;
+    
+
+    //i set reletive postion in row class in _gird.scss file
+
+    &-1{
+        top: -6rem;
+        left: 5rem;
+        position: absolute;
+    
+    }
+
+    &-2{
+        top: 3rem;
+        left: -3rem;
+        position: absolute;
+    
+    }
+
+    &-3{
+      
+    top: 11rem;
+    left: 8rem;
+    position: absolute;
+
+    }
+
+    &:hover{
+        transform: scale(1.2);
+        border: 6px solid;
+        border-image: $amir;
+        border-image-slice: 1;
+        z-index: 1;
+    }
+}
